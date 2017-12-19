@@ -60,4 +60,4 @@ window.jiathis_config,只有这样写才回成功分享*
 *node之前使用的安装工具一直是npm，但npm的服务器搭在国外，国内使用npm速度太慢，虽然有淘宝的cnpm镜像，但在速度上依然不够出色，目前一款名为“Yarn”的下载工具，下载速度很出色，至少要比cnpm出色，用法基本上和npm相同*  
 -参考地址:https://yarnpkg.com/zh-Hans/  
 -部分参数：  
-
+![images](images/yarn.jpg)
