@@ -24,3 +24,17 @@ $.cookie("key","value",{expires:7,path:"/"});
 ```
 $.cookie("key","",{expires:-1,path:"/"});  
 ```
+#### 关于HTML页面id生成的小技巧      
+在实际的HTML页面开发中应当尽可能的减少使用id来命名元素，但某些特定的情况下只能使用id命名来处理         
+可以避免在HTML页面直接写入id名，通过js来生成       
+代码如下:       
+HTML
+```html
+<div role="abc"></div>
+```      
+JS
+```js
+var name_id = 'abc' + Math.random();
+var $abc = body.find('[role=abc]');
+$abc.append('<div id="'+name_id+'"></div>')
+```
