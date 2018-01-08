@@ -37,4 +37,6 @@ JS
 var name_id = 'abc' + Math.random();
 var $abc = body.find('[role=abc]');
 $abc.append('<div id="'+name_id+'"></div>')
-```
+```      
+#### 关于本地虚拟端口        
+除了使用XAMPP来设置虚拟主机和端口外，webstorm的设置里面也提供一个简单的端口设置，具体使用方法可以百度"webstorm本地虚拟主机端口修改"
