@@ -35,4 +35,29 @@
     </body>
     <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 </html>
+```         
+
+### 表格          
+表格已经在当前已经不适用了，目前也只有在EMS才有用处         
+```html
+<table class="table" border="1" cellspacing="0" cellpadding="5" align="center">
+    <thead>
+    <tr>
+        <th width="10%">h1</th>
+        <th width="50%">h2</th>
+        <th width="20%">h3</th>
+        <th width="20%">h4</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2" align="right">footer1: <span class="stat-rate"></span></td>
+            <td>footer2: <span class="stat-fights"></span></td>
+            <td>footer3: <span class="stat-wins"></span></td>
+        </tr>
+    </tfoot>
+</table>
 ```
+
