@@ -32,5 +32,15 @@ Css代码：
 .hotel_rank .rank_ul li .orange{color:#ec8208;}
 .hotel_rank .rank_ul li .w_rec{width:60px;}
 ```
-FF、IE8、chrome浏览器显示如下图所示：
-![ie8](src/assets/images/liie8.jpg)
+FF、IE8、chrome浏览器显示如下图所示：      
+![ie8](/src/assets/images/liie.jpg)       
+IE6、IE7中显示如下图所示：      
+![ie7](/src/assets/images/liie7.jpg)      
+解决方案：     
+方案一     
+#list li设置clear:left|both，这时#list li不能设置width、height、zoom。      
+方案二     
+.hotel_rank .rank_ul li设置float:left，这时.hotel_rank .rank_ul li可以设置width、height、zoom。     
+方案三     
+给li中的a设置vertical-align:top|middle|bottom      
+这个例子中。方案二和方案三都可以解决这个问题。 
