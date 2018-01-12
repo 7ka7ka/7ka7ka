@@ -33,7 +33,7 @@ Css代码：
 .hotel_rank .rank_ul li .w_rec{width:60px;}
 ```
 FF、IE8、chrome浏览器显示如下图所示：      
-![ie8](/src/assets/images/liie.jpg)       
+![ie8](/src/assets/images/liie8.jpg)       
 IE6、IE7中显示如下图所示：      
 ![ie7](/src/assets/images/liie7.jpg)      
 解决方案：     
