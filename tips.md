@@ -68,4 +68,10 @@ background-color: #000;
 filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3);       
 background-color: rgba(0,0,0, 0.3);
 ```      
-需要注意的是这种方法在ie7、ie8下面无效，因此想要在ie7、ie8下面也实现这种效果目前最好的办法就是用png图来解决
+需要注意的是这种方法在ie7、ie8下面无效，因此想要在ie7、ie8下面也实现这种效果目前最好的办法就是用png图来解决        
+
+#### 关于获取HTML滚动距离       
+不要使用window.scrollY的方法来获取，该方法在ie下不兼容，使用document.documentElement.scrollTop || document.body.scrollTop来操作即可，前者只有在ie、opera、ff标准模式下有效，后者在ie、opera、ff怪异模式或chrome、safari（怪异模式和标准模式）有效      
+所以综合起来最终的写法：         
+   水平：document.documentElement.scrollLeft || document.body.scrollLeft；        
+   垂直：document.documentElement.scrollTop || document.body.scrollTop；
