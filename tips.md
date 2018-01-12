@@ -45,4 +45,27 @@ $abc.append('<div id="'+name_id+'"></div>')
 浏览器的url地址改变可以通过linux或者windows的操作指令来创建快捷方式的形式直接指向目标文件        
 原理：      
 1. linux通过指令在根目录下创建目标文件的快捷方式，"根目录/快捷方式/"的形式即可直接指向目标文件。windows原理一样          
-2. windows下直接穿件文件的快捷方式并不能达到我们需要的目的，需要通过cmd来操作才可以
+2. windows下直接穿件文件的快捷方式并不能达到我们需要的目的，需要通过cmd来操作才可以         
+
+#### HTML页面定时跳转      
+1. 当前页面每5秒刷新一次
+```html
+<meta http-equiv="refresh" content="5">
+```
+2. 当前页面2秒后跳到首页
+```html
+<meta http-equiv="refresh" content="2;url'/'">
+```
+3. 当前页面跳转到目标页面
+```html
+<meta http-equiv="refresh" content="0;url='http://www.baidu.com'">
+```         
+
+#### 父级背景透明不影响后代元素      
+```css
+background-color: #000;  
+-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3);  
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.3);       
+background-color: rgba(0,0,0, 0.3);
+```      
+需要注意的是这种方法在ie7、ie8下面无效，因此想要在ie7、ie8下面也实现这种效果目前最好的办法就是用png图来解决
