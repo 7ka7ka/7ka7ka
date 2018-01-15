@@ -2,7 +2,8 @@
 
 ### 实用工具
 
-1. 图片拼合：https://www.toptal.com/developers/css/sprite-generator        
+1. 图片拼合：https://www.toptal.com/developers/css/sprite-generator      
+2. 谷歌浏览器自带缓存清理工具：chrome://net-internals/#dns
 
 ### 插件记录      
 
