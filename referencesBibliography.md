@@ -19,5 +19,8 @@
 在兼容方面文档给出的是IE9+才有效果。     
 
 2. HTML5的Video标签详细说明手册       
-参考地址：http://blog.csdn.net/zengdeqing2012/article/details/38228869
+参考地址：http://blog.csdn.net/zengdeqing2012/article/details/38228869       
 
+3. flexbox弹性盒子布局    
+参考地址：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html （阮一峰的语法篇）    
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox （Firefox开发者社区）
