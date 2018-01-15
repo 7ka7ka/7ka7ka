@@ -27,4 +27,5 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_C
 
 4. css网格布局（grid layout）    
 参考地址：https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout （Firefox开发者社区）    
-https://css-tricks.com/snippets/css/complete-guide-grid/#prop-align-items
+https://css-tricks.com/snippets/css/complete-guide-grid/#prop-align-items     
+
