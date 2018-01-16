@@ -29,3 +29,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_C
 参考地址：https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout （Firefox开发者社区）    
 https://css-tricks.com/snippets/css/complete-guide-grid/#prop-align-items     
 
+5. 修改PHPCMS V9列表排序，listorder、order排序功能的方法    
+参考地址：http://www.zhoulujun.cn/zhoulujun/html/php/phpcms/2016_0408_7748.html
+
