@@ -74,4 +74,26 @@ background-color: rgba(0,0,0, 0.3);
 不要使用window.scrollY的方法来获取，该方法在ie下不兼容，使用document.documentElement.scrollTop || document.body.scrollTop来操作即可，前者只有在ie、opera、ff标准模式下有效，后者在ie、opera、ff怪异模式或chrome、safari（怪异模式和标准模式）有效      
 所以综合起来最终的写法：         
    水平：document.documentElement.scrollLeft || document.body.scrollLeft；        
-   垂直：document.documentElement.scrollTop || document.body.scrollTop；
+   垂直：document.documentElement.scrollTop || document.body.scrollTop；       
+         
+#### 如何判断页面是在移动端还是PC端打开       
+javascript的Navigator对象包含有关浏览器的信息，声明了浏览器用于 HTTP 请求的用户代理头的值。所以可以通过判断navigator.useragent里面是否有某些值来判断      
+```js
+window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "移动端url" : "pc端url";
+```
+需要注意的是这种写法会造成某一种情况下打开页面会无限循环刷新页面，导致页面一直处于白屏状态，解决办法就是在移动端的里面只写上跳pc的代码, 在pc端里面只写上跳移动端的代码就可以了      
+
+PC
+```js
+if(!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+   window.location.href = "pc端url";
+}
+```
+移动端
+```js
+if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+   window.location.href = "移动端url";
+}
+```
+        
+        
