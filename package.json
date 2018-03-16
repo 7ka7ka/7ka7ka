@@ -1,0 +1,33 @@
+{
+  "name": "record",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "build": "webpack",
+    "start": " webpack-dev-server --env --host 0.0.0.0 --devtool=cheap-module-source-map --inline --hot"
+  },
+  "author": "",
+  "dependencies": {
+    "element-ui": "^2.2.1",
+    "jquery": "1.12.4",
+    "vue": "^2.5.15",
+    "vue-loader": "^14.2.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.15"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "vue-loader": "^14.2.1",
+    "webpack": "^3",
+    "webpack-dev-server": "^1.16.5"
+  }
+}

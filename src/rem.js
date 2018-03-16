@@ -1,7 +1,3 @@
-/**
- * 一个简单的移动端尺寸比例的封装js，以rem为单位，实用性很好，实际使用根据情况可在调试
- */
-
 (function(doc,win){
 	var docEl = doc.documentElement,resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
 	recalc = function(){
@@ -18,3 +14,4 @@
 	win.addEventListener(resizeEvt, recalc, false);
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document,window);
+
