@@ -95,5 +95,17 @@ if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
    window.location.href = "移动端url";
 }
 ```
+
+#### jQuery mouseover,mouseout事件多次执行的问题处理
+问题解析
+在用到mouseover和mouseout事件来作为事件触发的条件，单一元素可以正常使用，但是如果我们用做触发的元素内部有其他的元素的时候当鼠标移上的时候会反复 的触发mouseover和mouseout事件。因为内部元素在鼠标移上的时候会向它的父对象派发事件，所以外面元素相当于也触发了mouseover 事件。
+
+解决方法
+jquery(需要版本号大于1.2.2)中修复上述问题。
+将mouseover,mouseout 替换 mouseenter和mouseleave事件，这是IE特有的函数，使用jquery就很好的解决了兼容问题。函数的原理当第一次鼠标进入节点区域时触发，以后在节点区域内(子节点间)移动时不触发。
+```js
+$('div').bind("mouseenter",function(){ // 移入 }); 
+$('div').bind("mouseleave",function(){ // 移出 }); 
+```
         
         
