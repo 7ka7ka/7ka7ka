@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --env --port 8080 --devtool=cheap-module-source-map --inline --hot"
   },
   "dependencies": {
-    "jquery": "1.12.4"
+    "jquery": "3.4.1"
   } ,
   "devDependencies": {
     "css-loader": "^0.28.4",
